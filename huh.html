@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Text Editor</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+	
+    <!-- Custom styles for this template -->
+    <link href="css/theme.css" rel="stylesheet">
+	
+	<!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+	
+	<link href="css/style.css" rel="stylesheet">
+	
+	<link href="css/WebResourcee.css" rel="stylesheet">
+	
+
+<body>
+<div id="container" style="width: 789px;">
+    <!-- $JS_ONLY_BEGIN$ -->
+        <table id="navigation">
+            <tbody><tr>
+                <td class="button"><input type="button" id="btnFirst" value="<<" title="First Difference"></td>
+                <td class="button"><input type="button" id="btnPrevious" value="<" title="Previous Difference"></td>
+                <td class="button"><input type="button" id="btnNext" value=">" title="Next Difference"></td>
+                <td class="button"><input type="button" id="btnLast" value=">>" title="Last Difference"></td>
+                <td>
+                    <select id="currentDiff" size="1"><option value="0">(No differences)</option></select>
+                </td>
+            </tr>
+        </tbody></table>
+    <!-- $JS_ONLY_END$ -->
+
+    <div class="text comparison">
+        <div class="pane">
+            <div id="title1" class="title" style="width: 384.5px; height: 16px;" title="[Text Fragment 1]"><b>[Text Fragment 1]</b></div>
+            <div id="file1" class="file" style="width: 388.5px; height: 446px;">
+                <table class="panes">
+                    <tbody><tr>
+                        <td class="diffBar" style="display: none;">
+                            <div class="diffs"></div>
+                        </td>
+                        <td class="nums">
+                            <div class="num">1 </div>
+
+                        </td>
+                        <td class="content">
+                            <div class="l li"> </div>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+        <div class="pane">
+            <div id="title2" class="title" style="width: 384.5px; height: 16px;" title="[Text Fragment 2]"><b>[Text Fragment 2]</b></div>
+            <div id="file2" class="file" style="width: 388.5px; height: 446px;">
+                <table class="panes">
+                    <tbody><tr>
+                        <td class="diffBar" style="display: none;">
+                            <div class="diffs"></div>
+                        </td>
+                        <td class="nums">
+                            <div class="num">1 </div>
+
+                        </td>
+                        <td class="content">
+                            <div class="l li"> </div>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+    </div>
+
+    <div id="inspector" style="">
+        <div class="left line">
+            <table class="panes">
+                <tbody><tr>
+                    <td class="diffBar" style="display: none;"></td>
+                    <td class="nums">
+                        <div class="num" style="width: 8px;">1 </div>
+                    </td>
+                    <td class="content">
+                        <div id="inspectorLeftContent" class="l li"> </div>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="right line">
+            <table class="panes">
+                <tbody><tr>
+                    <td class="diffBar" style="display: none;"></td>
+                    <td class="nums">
+                        <div class="num" style="width: 8px;">1 </div>
+                    </td>
+                    <td class="content">
+                        <div id="inspectorRightContent" class="l li"> </div>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+
+    <div id="legend">
+        <div id="numDiffs"><b>No differences found</b></div><div id="colors"><div class="sa" title="Added lines: 0, inline additions in changed lines: 0">Added(0,0)</div><div class="sd" title="Deleted lines: 0, inline deletions in changed lines: 0">Deleted(0,0)</div><div class="sc" title="Changed lines: 0">Changed(0)</div><div class="sc2" title="Inline changes in changed lines: 0">Changed in changed(0)</div><div class="sig" title="Ignored lines and line parts">Ignored</div></div>
+    </div>
+
+    <div id="generated_by">
+        Generated on January 7, 2016, 8:28 PM by <a href="http://www.prestosoft.com/edp_examdiffpro.asp?ref=diffreport" target="_blank">ExamDiff Pro</a> 8.0.1.0.
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
